@@ -1,3 +1,6 @@
+[submodule "cmake/imgui"]
+	path = cmake/imgui
+	url = https://github.com/developer239/cmake-modern-findimgui-sdl
 [submodule "cmake/sdl2"]
 	path = cmake/sdl2
 	url = https://github.com/opeik/cmake-modern-findsdl2
