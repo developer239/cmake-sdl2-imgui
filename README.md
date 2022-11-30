@@ -4,8 +4,9 @@
 
 - `$ brew install cmake`
 - `$ brew install sdl2`
-- (optional) `$ brew install sdl2_ttf`
-- (optional) `$ brew install sdl2_image`
+- `$ brew install sdl2_ttf`
+- `$ brew install sdl2_image`
+- `$ brew install sdl2_mixer`
 
 ### Submodules:
 
