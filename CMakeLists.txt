@@ -1,15 +1,12 @@
 cmake_minimum_required(VERSION 3.23)
-project(automation_engine)
+project(CMake_SDL2_ImGui)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED true)
 
-# add DCMAKE_CXX_COMPILER=clang
-set(CMAKE_CXX_COMPILER clang++)
+add_executable(CMake SDL2 ImGui main.cpp)
 
-add_executable(automation_engine main.cpp)
-
-# SDL
+## SDL
 
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake/sdl2)
 
@@ -21,7 +18,7 @@ find_package(SDL2_mixer REQUIRED)
 target_link_libraries(${PROJECT_NAME} PUBLIC SDL2::SDL2 SDL2::TTF
         SDL2::Image SDL2::Mixer)
 
-# ImGui
+## ImGui
 
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake/imgui)
 

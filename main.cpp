@@ -25,7 +25,6 @@ int main() {
 
   ImGui::CreateContext();
   ImGuiIO& io = ImGui::GetIO();
-  (void)io;
 
   ImGui_ImplSDL2_InitForSDLRenderer(window, renderer);
   ImGui_ImplSDLRenderer_Init(renderer);
@@ -48,7 +47,7 @@ int main() {
     ImGui::ShowDemoWindow();
     ImGui::Render();
 
-    SDL_SetRenderDrawColor(renderer, 0, 255, 255, 255);
+    SDL_SetRenderDrawColor(renderer, 0, 0, 100, 0);
     SDL_RenderClear(renderer);
 
     ImGui_ImplSDLRenderer_RenderDrawData(ImGui::GetDrawData());
